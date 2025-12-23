@@ -5,3 +5,4 @@
 - Private IP is used internally
 - SSH is used to access servers securely
 - Command: ssh user@server_ip
+- SSH authentication working
