@@ -25,4 +25,9 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push maithililok/my-devops-app:latest
+          docker push maithililok/my-devops-app:latest.
+
+      - name: Confirm login works
+        run: |
+         docker info | grep -i Username
+
