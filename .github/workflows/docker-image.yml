@@ -28,7 +28,7 @@ jobs:
           docker push maithililok/my-devops-app:latest.
 
       - name: Confirm login works
-         run: |
+        run: |
            docker info | grep -i Username
 
       - name: Confirm login works
