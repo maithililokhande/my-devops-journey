@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        
       - name: Debug token length
         run: |
          echo "Token chars: $(echo -n "${{ secrets.DOCKERHUB_TOKEN }}" | wc -c)"
