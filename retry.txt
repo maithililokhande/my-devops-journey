@@ -1,3 +1,4 @@
 retry build
 done
 retry build
+ci test
