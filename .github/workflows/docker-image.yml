@@ -21,9 +21,7 @@ jobs:
         run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
       - name: Build Docker image
-        run: |
-           docker build -t maithililok/my-devops-app:latest \
-           -f project/day12-dockerfile-nginx/Dockerfile .
+        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/my-devops-app:latest ./project
 
       - name: Push Docker image
         run: |
