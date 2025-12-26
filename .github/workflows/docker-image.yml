@@ -22,7 +22,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t maithililok/my-devops-app:latest .
+           docker build -t maithililok/my-devops-app:latest \
+           -f project/day12-dockerfile-nginx/Dockerfile .
 
       - name: Push Docker image
         run: |
